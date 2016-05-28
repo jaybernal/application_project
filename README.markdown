@@ -1,6 +1,6 @@
 Application Project for SCCS
 ============================
-
+[![Code Climate](https://codeclimate.com/github/jaybernal/application_project/badges/gpa.svg)](https://codeclimate.com/github/jaybernal/application_project)
 
 
 
