@@ -26,6 +26,9 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 #setup Annotation schema
 gem 'annotate'
 
+#enable features such as static asset serving and logging on Heroku
+gem 'rails_12factor', group: :production
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
