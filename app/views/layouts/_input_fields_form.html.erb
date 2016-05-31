@@ -1,0 +1,20 @@
+<div class="container">
+  <%= form_for @form_input do |f| %>
+  <div class="row company-info">
+    <div class="col-lg-4 logo-form"><%= f.label :Place_Logo_Here %><%= f.text_field :logo %></div>
+    <div class="col-lg-4 company-name-form"><%= f.label :Company_Name %> <%= f.text_field :company_name %></div>
+    <div class="col-lg-4 company-address-form"><%= f.label :Company_Address %><%= f.text_field :company_address %></div>
+  <div>
+  <div class="col-lg-12"></div>
+    <div class="col-lg-12 form-name-info text-center">
+      <p>Applicant Information</p>
+
+    </div>
+    <div class="col-lg-4 applicant-name-info"><%= f.label :first_name %><%= f.text_field :first_name %></div>
+    <div class="col-lg-4 applicant-name-info"><%= f.label :middle_name %><%= f.text_field :middle_name %></div>
+    <div class="col-lg-4 applicant-name-info"><%= f.label :last_name %> <%= f.text_field :last_name %></div>
+  </div>
+  </div>
+  <%= f.submit %>
+   <% end %>
+</div>

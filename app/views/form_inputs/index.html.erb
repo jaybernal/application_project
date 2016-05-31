@@ -1,2 +1,8 @@
-<h1>FormInputs#index</h1>
-<p>Find me in app/views/form_inputs/index.html.erb</p>
+
+<% @form_inputs.each do |f| %>
+  <img src="<%= f.logo %>" alt="">
+  <p><%= f.company_name %></p>
+  <p><%= f.first_name %></p>
+  <p><%= f.middle_name %></p>
+  <p><%= f.last_name %></p>
+<% end %>

@@ -1,3 +1,35 @@
 // Place all the styles related to the form_inputs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.company-info{
+  border: 2px solid black;
+  width: 670px; /* width: 7in; */
+  height: 900px
+}
+
+.logo-form{
+  border: 2px solid black;
+  width: 160px;
+  height: 85px;
+}
+
+.company-name-form{
+  border: 2px solid black;
+  width: 160px;
+  height: 85px;
+}
+
+.company-address-form{
+  border: 2px solid black;
+  width: 160px;
+  height: 85px;
+}
+.form-name-info{
+  background-color: gray;
+}
+
+.applicant-name-info{
+  border: 2px solid black;
+}
