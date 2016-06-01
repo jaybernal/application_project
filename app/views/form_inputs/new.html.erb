@@ -1,1 +1,12 @@
-<%= render partial: "layouts/input_fields_form", locals: {f: @form_inputs} %>
+
+
+
+<div class="row">
+  <div class="col-sm-7">
+    <%= render partial: "layouts/input_fields_form", locals: {f: @form_input} %>
+  </div>
+  <div class="col-sm-5">
+    <%= render partial: "layouts/option_form", locals: {form_inputs: @form_inputs} %>
+  </div>
+  
+</div>
