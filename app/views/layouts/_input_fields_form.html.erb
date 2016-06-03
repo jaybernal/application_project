@@ -1,34 +1,15 @@
 
 <div class="container">
   <p>Company Info</p>
- <%= form_for @form_input do |f| %>
- 
- <table class="table-bordered test-sort">
-    <tbody id="test-tb">
-      <tr class="test-tr">
-        <td class="test-td"><%= f.label :logo, "Logo Here" %></td>
-        <td class="test-td"><%= f.label :company_name, "Company NAME" %></td>
-        <td class="test-td"><%= f.label :company_address, "Company ADDRESS" %></td>
-      </tr>
-     
-    <tr>
-      <td><%= f.file_field :logo %></td>
-      <td><%= f.text_field :company_name %></td>
-      <td><%= f.text_field :company_address %></td>
-    </tr>
-    <tr>
-      <td><%= f.label :first_name, "First NAME" %></td>
-      <td><%= f.label :middel_name, "Middle NAME" %></td>
-      <td><%= f.label :last_name, "Last NAME" %></td>
-    </tr>
-    <tr>
-      <td><%= f.text_field :first_name %></td>
-      <td><%= f.text_field :middle_name %></td>
-      <td><%= f.text_field :last_name %></td>
-    </tr>
-   </tbody>
-</table> 
-<%= f.submit %>
-<% end %>
+<ul class="list-inline">
+  <li class="form-box">logo</li>
+  <li class="form-box">Company name</li>
+  <li class="form-box">Company Address</li>
+</ul>
+<ul class="list-inline">
+  <li class="form-box">First Name</li>
+  <li class="form-box">Middle Name</li>
+  <li class="form-box">Last Name</li>
+</ul>
 </div>
 
