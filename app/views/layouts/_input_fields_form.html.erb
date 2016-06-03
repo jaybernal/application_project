@@ -1,12 +1,16 @@
 
 <div class="container">
+  <p>Company Info</p>
  <%= form_for @form_input do |f| %>
- <table class="table-bordered">
-    <tr>
-      <td><%= f.label :logo, "Logo Here" %></td>
-      <td><%= f.label :company_name, "Company NAME" %></td>
-      <td><%= f.label :company_address, "Company ADDRESS" %></td>
-    </tr>
+ 
+ <table class="table-bordered test-sort">
+    <tbody id="test-tb">
+      <tr class="test-tr">
+        <td class="test-td"><%= f.label :logo, "Logo Here" %></td>
+        <td class="test-td"><%= f.label :company_name, "Company NAME" %></td>
+        <td class="test-td"><%= f.label :company_address, "Company ADDRESS" %></td>
+      </tr>
+     
     <tr>
       <td><%= f.file_field :logo %></td>
       <td><%= f.text_field :company_name %></td>
@@ -22,7 +26,9 @@
       <td><%= f.text_field :middle_name %></td>
       <td><%= f.text_field :last_name %></td>
     </tr>
+   </tbody>
 </table> 
 <%= f.submit %>
 <% end %>
 </div>
+
