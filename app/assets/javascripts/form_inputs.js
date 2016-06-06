@@ -6,7 +6,8 @@ $(function(){
   alert("hello jay")
 })
 
-$(document).ready(function(){
-  $("#test-tb").sortable();
-  $("#test-tb").disableSelection();
-});
+  $(document).ready(function() {
+    $( "#sortable1, #sortable2" ).sortable({
+      connectWith: ".connectedSortable"
+    }).disableSelection();
+  });

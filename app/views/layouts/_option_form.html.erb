@@ -1,37 +1,14 @@
 
 
+
+
+
 <div class="container">
-
-<table class="table-bordered">
-  <p>Header Options</p>
-  <%= form_for @form_input do |f| %>
-  <tbody>
-    <tr>    
-      <th><%= f.label :Place_Logo_Here %></th>
-      <td><%= f.file_field :logo %></td>
-    </tr>
-    <tr>    
-      <th><%= f.label :Company_Name %></th>
-      <td><%= f.text_field :company_name %></td>
-    </tr>
-    <tr>    
-      <th><%= f.label :Company_Address %></th>
-      <td><%= f.text_field :company_address %></td>
-    </tr>
-    <tr>    
-      <th><%= f.label :first_name %></th>
-      <td><%= f.text_field :first_name %></td>
-    </tr>
-    <tr>    
-      <th><%= f.label :middle_name %></th>
-      <td><%= f.text_field :middle_name %></td>
-    </tr>
-    <tr>    
-      <th><%= f.label :last_name %></th>
-      <td><%= f.text_field :last_name %></td>
-    </tr>    
-
-  </tbody>
-  <% end %>
-</table>
+ <p>Header Options</p>
+<ul id="sortable2" class="connectedSortable">
+   <%= form_for @form_input do |f| %>
+  <li><%= f.label :logo, "Place Logo Here" %><%= f.file_field :logo %></li>
+  <li><%= f.label :company_name, "Company Name" %><%= f.text_field :company_name %></li>
+   <% end %>
+</ul>
 </div>
