@@ -11,6 +11,7 @@
 #  last_name       :string
 #  created_at      :datetime         not null
 #  updated_at      :datetime         not null
+#  company_id      :integer
 #
 
 class FormInput < ActiveRecord::Base
@@ -20,4 +21,6 @@ class FormInput < ActiveRecord::Base
   validates :first_name, presence: true
   validates :middle_name, presence: true
   validates :last_name, presence: true
+
+  belongs_to :company
 end
