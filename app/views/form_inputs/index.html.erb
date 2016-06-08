@@ -1,8 +1,25 @@
+<div class="container">
+  <div class="row">
+    <table class="table table-condensed table-hover col-lg-6">
+      <thead>
+        <tr>
+          <th>Input Type</th>
+          <th>Edit</th>
+          <th>Delete</th>
+        </tr>
+        <tbody>
+          <% @form_inputs.each do |f| %>
+          <tr>
+            <td><%= f.input_name %></td>
+            <td><%= link_to "Edit", edit_form_input_path(f) %></td>
+            <td><%= link_to "Delete", form_input_path(f), :method => :delete %></td>
+          </tr>
+          <% end %>
+        </tbody>
+      </thead>
+    </table>  
+    <p><%= link_to "Add New Input", new_form_input_path %></p>
+  </div>
+</div>
 
-<% @form_inputs.each do |f| %>
-  <img src="<%= f.logo %>" alt="">
-  <p><%= f.company_name %></p>
-  <p><%= f.first_name %></p>
-  <p><%= f.middle_name %></p>
-  <p><%= f.last_name %></p>
-<% end %>
+

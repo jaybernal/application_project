@@ -1,0 +1,9 @@
+
+
+<%= form_for @form_input do |f| %>
+  <%= f.label :input_name, "Form Input" %>
+  <%= f.text_field :input_name %>
+
+  <%= f.submit %>
+<% end %>
+    <%= link_to "Back to Form Options", form_inputs_path %>
